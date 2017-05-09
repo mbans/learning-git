@@ -22,4 +22,5 @@ git pull                                                -       Fetches data fro
 git branch testing					-	creates a branch
 git checkout testing					-	switches branch, HEAD will point to the new branch
 
-
+git branch -r						-	show all remote branches
+git branch -a						-	showa all local/remote branches
