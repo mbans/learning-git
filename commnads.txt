@@ -1,0 +1,4 @@
+git diff --cached	-	what has been staged
+git status -s		-	summary of additions, modifications
+git add			-	will add new files as well as adding new content (modifications) to staging area
+
