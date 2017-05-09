@@ -3,3 +3,8 @@ git status -s						-	summary of additions, modifications
 git add							-	will add new files as well as adding new content (modifications) to staging area
 git commit -a -m 'added new benchmarks' 		-	this will commit changes made on your branch WITHOUT the need to add to staging previously
 git log							-	view history log
+got log --stat						-	log with diffs
+git log --pretty=oneline
+git log --pretty=format:"%h - %an, %ar : %s"		
+git log --pretty=format:"%h %s" --graph			-	shows ASCII based branch merges
+
