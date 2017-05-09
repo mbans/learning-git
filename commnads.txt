@@ -7,6 +7,7 @@ got log --stat						-	log with diffs
 git log --pretty=oneline
 git log --pretty=format:"%h - %an, %ar : %s"		
 git log --pretty=format:"%h %s" --graph			-	shows ASCII based branch merges
+git log --oneline --decorate				-	the 'decorate' will show the branch that HEAD is currently pointing to
 git reset HEAD CONTRIBUTING.md				-	resets any staged files i.e. reverts
 git checkout -- CONTRIBUTING.md				-	discards changed
 git remote -v						- 	view your remote servers, origin being the name of the host you CLONED the repo from
@@ -16,7 +17,9 @@ git fetch <remote-name>					-	fetches/gets data from remote project, after runni
 								Therefore 'git fetch origin' will fetch new work that been pushed to the server since you cloned it (or last fetched)
 git clone <remote>					-	pulls down content and sets up your MASTER branch to track the remote MASTER branch
 
-** PUSHING & PULLING
+BRANCHING,PUSHING & PULLING
 git pull                                                -       Fetches data from the server originally cloned and tries to merge into code your working on
+git branch testing					-	creates a branch
+git checkout testing					-	switches branch, HEAD will point to the new branch
 
 
