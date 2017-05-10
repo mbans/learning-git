@@ -17,10 +17,14 @@ git fetch <remote-name>					-	fetches/gets data from remote project, after runni
 								Therefore 'git fetch origin' will fetch new work that been pushed to the server since you cloned it (or last fetched)
 git clone <remote>					-	pulls down content and sets up your MASTER branch to track the remote MASTER branch
 
+===============================================================================================
 BRANCHING,PUSHING & PULLING
+===============================================================================================
 git pull                                                -       Fetches data from the server originally cloned and tries to merge into code your working on
 git branch testing					-	creates a branch
 git checkout testing					-	switches branch, HEAD will point to the new branch
 
 git branch -r						-	show all remote branches
 git branch -a						-	showa all local/remote branches
+git push origin <remote branch>				-       pushing local changes to the remote branch
+							-       the remote branch should be taken from the name provided when you do 'git 								  branch -a'
