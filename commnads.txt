@@ -27,4 +27,5 @@ git checkout testing					-	switches branch, HEAD will point to the new branch
 git branch -r						-	show all remote branches
 git branch -a						-	showa all local/remote branches
 git push origin <remote branch>				-       pushing local changes to the remote branch
-							-       the remote branch should be taken from the name provided when you do 'git 								  branch -a'
+							-       the remote branch should be taken from the name provided when you do 									'git branch -a'
+								e.g. git push origin feature/myBranch
