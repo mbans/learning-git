@@ -29,3 +29,16 @@ git branch -a						-	showa all local/remote branches
 git push origin <remote branch>				-       pushing local changes to the remote branch
 							-       the remote branch should be taken from the name provided when you do 									'git branch -a'
 								e.g. git push origin feature/myBranch
+								
+								
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+Commit to wrong branch 		   -  https://stackoverflow.com/questions/2941517/how-to-fix-committing-to-the-wrong-git-branch
+--------------------------------------------------------------------------------------------------------------------------------
+1. To rollback one commit (make sure you note the commit's hash for the next step)
+git reset --hard HEAD^					 
+
+2. To pull that commit into a different branch:
+git checkout other-branch
+git cherry-pick COMMIT-HASH
