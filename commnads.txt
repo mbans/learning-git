@@ -42,6 +42,8 @@ git branch --track branch-name origin/branch-name    - Create a local branch "br
 
 git remote show origin			- shows all remote/local branches configured for push/pull
 
+git push -u origin feature/PRIME-27742-sdma-exception-management-order       
+-- this is used to explicitly push to the remote branch in origin, this will be set thereafter
 
 --------------------------------------------------------------------------------------------------------------------------------
 Commit to wrong branch 		   -  https://stackoverflow.com/questions/2941517/how-to-fix-committing-to-the-wrong-git-branch
