@@ -54,3 +54,9 @@ git reset --hard HEAD^
 2. To pull that commit into a different branch:
 git checkout other-branch
 git cherry-pick COMMIT-HASH
+
+---------------------------------------
+Stashing
+--------------------------------------
+git stash apply stash@{2}	-- apply specific
+git stash list 			-- view all 
