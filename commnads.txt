@@ -60,3 +60,65 @@ Stashing
 --------------------------------------
 git stash apply stash@{2}	-- apply specific
 git stash list 			-- view all 
+
+
+---------------------------------------
+Squashing (aka Interactive Rebasing)
+---------------------------------------
+In order to keep a clean commit history, we can squash commits together into single commit
+only these squashed commits will appear on the commit history
+
+Scenario: 
+a) 3 seperate commits to a file 
+b) Before raising PR to merge to master, we want to clean up commit history into a single commit 
+c) Run: git rebase -i HEAD~3
+d) This pulls back the last 3 commit
+
+------------------------------------------------------------
+pick c0e5baa Commit 1
+pick f82ca4c Commit 2
+pick 6ca2164 Commit 3
+
+# Rebase 50fce7d..6ca2164 onto 50fce7d (3 commands)
+#
+# Commands:
+# p, pick = use commit
+# r, reword = use commit, but edit the commit message
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+# d, drop = remove commit
+------------------------------------------------------------
+
+update to 
+
+pick c0e5baa Commit 1
+s f82ca4c Commit 2
+s 6ca2164 Commit 3
+
+Then will be prompted if you want to update the commit message for "Commit 1" commit.
+I will update the message to "My 3 squashed commits"
+
+e) git log
+
+commit aae2de83019de7bb0fb3fddda0f23ebe907231f7
+Author: mbans <martinbans@gmail.com>
+Date:   Sun May 27 07:27:09 2018 +0800
+
+    My 3 squashed commits
+
+
+f) Notice how the squashed commit is a different commit to the 3 squashed
+
+
+
+
+
+
+
+
+
+
+
+
